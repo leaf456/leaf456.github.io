@@ -13,17 +13,37 @@
 			.side-bar {
 				position: fixed;
 				left: 0px;
-				height: 0px;
+				top: 0px;
 				width: 20%;
 				height: 100%;
 				background-color: #FFFFFF;
 				word-break: break-word;
+				z-index: 3;
 			}
-			@media screen and (max-width: 800px) {
+			@media screen and (orientation: portrait){
+				side-bar {
+					display: none !important;
+				}
 				.website-content {
 					left: 20px !important;
 				}
+				img {
+					width: 100% !important;
+				}
 				.side-bar {
+					width: 38px;
+				}
+				.hide-input:checked + .side-bar {
+					width: 100% !important;
+					background-color: white !important;
+					color: black !important;
+				}
+				.hide-input:checked + .side-bar-clicker {
+					width: 5px;
+				}
+			}
+			@media screen and (orientation: landscape) {
+				.side-bar-clicker {
 					display: none !important;
 				}
 			}
@@ -39,10 +59,29 @@
 			h4 {
 				margin: 5px;
 			}
+			.side-bar-clicker {
+				display: block;
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				width: 38px;
+				height: 30px;
+				background-color: green;
+				z-index: 5;
+				outline: none;
+				border: none;
+				outline: 0px solid black;
+			}
+			.hide-input {
+				position: fixed;
+				top: 50px;
+			}
 		</style>
+		<label for="item-3" class="side-bar-clicker">More</label>
+		<input type="checkbox" class="hide-input" id="item-3"></input>
 		<div class="side-bar">
 			<center>
-			
+			<br>
 			<h3>My social links</h3>
 			<h4>Roblox - <a href="https://www.roblox.com/users/1093820350/profile">@pro_9283</a></h4>
 			<h4>Github - <a href="https://github.com/leaf456/">leaf456</a></h4>
