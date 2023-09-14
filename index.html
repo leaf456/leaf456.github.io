@@ -8,7 +8,7 @@
 		<style>
 			body {
 				margin: 0px;
-				background-color: #FFFFaa;
+				background-color: #aaaaaa;
 				font-family: Arial;
 			}
 			.side-bar {
@@ -17,7 +17,7 @@
 				top: 0px;
 				width: 20%;
 				height: 100%;
-				background-color: #FFFFFF;
+				background-color: #dddddd;
 				word-break: break-word;
 				z-index: 3;
 			}
@@ -32,11 +32,15 @@
 					width: 100% !important;
 				}
 				.side-bar {
-					width: 38px;
+					width: 0px;
+					color: #00000000 !important;
+					word-break: none;
+				}
+				.side-bar a {
+					color: #00000000 !important;
 				}
 				.hide-input:checked + .side-bar {
 					width: 100% !important;
-					background-color: white !important;
 					color: black !important;
 				}
 				.side-bar-clicker {
@@ -75,7 +79,7 @@
 			}
 			.hide-input {
 				position: fixed;
-				top: 50px;
+				left: -50px;
 			}
 		</style>
 		<label for="item-3" class="side-bar-clicker">More</label>
@@ -84,10 +88,9 @@
 			<center>
 			<br>
 			<h3>My social links</h3>
-			<h4>Roblox - <a href="https://www.roblox.com/users/1093820350/profile">@pro_9283</a></h4>
 			<h4>Github - <a href="https://github.com/leaf456/">leaf456</a></h4>
 			<h4>Stack overflow - <a href="https://stackoverflow.com/users/14659723/chowder">chowder</a></h4>
-			<h4>Discord server - <a href="https://discord.gg/7eQa4bmB2g">https://discord.gg/7eQa4bmB2g</a></h4>
+			<h4>Discord - <a href="#">@idk_3341</a></h4>
 			
 			<h3>My projects</h3>
 			<ul>
@@ -103,17 +106,21 @@
 		</div>
 		<div class="website-content">
 			<h1>Hi, I'm leaf456!</h1>
-			<h3>I'm a programmer that lives in Australia. <br>I enjoy programming in javascript, python and (sometimes) lua! I mainly code in javascript because it's extremely easy to use, although I will happily try new languages.<br>If you want to contact me, you can look in my social links or join my discord server at <a href="https://discord.gg/7eQa4bmB2g">https://discord.gg/7eQa4bmB2g</a></h3>
-			<h1>Leaf456 - my projects</h1>
+			<h3>I'm a programmer that lives in Australia. <br>I mostly program in javascript, python and lua. I mainly code in javascript because it's the most used language in the world, although I try new languages sometimes.<br>If you want to contact me, you can look in my social links or add me on discord at @idk_3341</h3>
+			<h2>Why am I leaf456?</h1>
+			<h3>I dunno, Github just made it for me when I made my account.</h3>
+			<h2>What I'm currently working on</h1>
+			<h3>Right now I'm focused on more low-level things like x86 assembly and memory management. I find it intresting how such basic instructions can make machines like modern computers work so fast and effeciently.</h3>
+			<h1>My projects</h1>
 			<h3 id="wordalle">Wordalle remade</h3>
 			<img src="images/wordalle.png" style="width: 60%;"></img>
-			<p>About a year ago I found out about <a href="https://huggingface.co/spaces/huggingface-projects/wordalle">wordalle</a> and thought it was a really neat idea. Now, a year later, and it hasn't been updated for several months so I decided to remake it with new prompts. I asked chatgpt for ideas of prompts and used DALL-E 2 to create the images. The project mostly uses javascript with a small hint of html and css mixed in. Since I don't want to have the same thing that happened to the original wordalle happen to mine, I'll try to add new images regularily, although I can't guarantee anything.</p>
+			<p>About a year ago I found out about <a href="https://huggingface.co/spaces/huggingface-projects/wordalle">wordalle</a> and thought it was a really neat idea. Now, a year later, and it hasn't been updated for several months so I decided to remake it with new prompts. I asked chatgpt for ideas of prompts and used DALL-E 2 to create the images. The project mostly uses javascript with a small hint of html and css mixed in.</p>
 			<a href="https://leaf456.github.io/wordalle/">Visit website</a>
 			<a href="https://github.com/leaf456/wordalle">Source code</a>
 			<hr>
 			<h3 id="diep.io">Bad diep.io copy</h3>
 			<img src="images/baddiep.png" style="width: 60%;"></img>
-			<p>A copy of the popular game diep.io. My coding on this project is really good because I grouped variables and stuff into objects for variables so it was really clean and easy to understand. This is probably one of my projects that I'm more proud of just because of how cleanly it turned out - all static files and very similar physics to the real game.</p>
+			<p>A copy of the popular game diep.io. This is my first project where I used OOP so I was still getting used to it. This is probably one of my projects that I'm more proud of just because of how cleanly it turned out - all static files and very similar physics to the real game.</p>
 			<a href="https://leaf456.github.io/bad-diep.io/">Visit website</a>
 			<a href="https://github.com/leaf456/bad-diep.io">Source code</a>
 			<hr>
@@ -125,7 +132,7 @@
 			<hr>
 			<h3 id="2dvoxel">2d voxel region separator</h3>
 			<img src="images/2dregionseperator.png" style="width: 60%;"></img>
-			<p>A bit of a test project to see what the limits for this sort of thing is on the cpu. It works pretty well even when testing for closed loops every time a block is placed, although I'm sure it could be optimised alot. I'm pretty sure I intended to use this for some sort of cool project but I think I just got bored of it or forgot about it.</p>
+			<p>A bit of a test project to see what the limits for this sort of thing is on the cpu. It works pretty well even when testing for closed loops every time a block is placed, although I'm sure it could be optimised alot.</p>
 			<a href="https://leaf456.github.io/2d-voxel-region-separator/">Visit website</a>
 			<a href="https://github.com/leaf456/2d-voxel-region-separator">Source code</a>
 			<hr>
